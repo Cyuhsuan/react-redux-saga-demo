@@ -51,7 +51,20 @@ function data(state = [], action) {
       ];
     default:
       return state;
-      break;
+  }
+}
+
+function sagaData(state = [], action) {
+  switch (action.type) {
+    case "ADD_SAGA_DATA":
+      return [
+        ...state,
+        {
+          data: action.data,
+        },
+      ];
+    default:
+      return state;
   }
 }
 
@@ -59,6 +72,7 @@ const todoApp = combineReducers({
   visibilityFilter,
   todos,
   data,
+  sagaData,
 });
 
 export default todoApp;

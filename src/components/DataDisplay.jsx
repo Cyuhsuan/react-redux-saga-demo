@@ -3,7 +3,6 @@ import DetDataBtn from "./DetDataBtn";
 
 const DataDisplay = () => {
   const data = useSelector((state) => state.data);
-  console.log(data);
   return (
     <div>
       DataDisplay

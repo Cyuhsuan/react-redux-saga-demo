@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import DataDisplay from "./DataDisplay";
+import SagaDataDisplay from "./SagaDataDisplay";
 import AddTodo from "../containers/AddTodo";
 import VisibleTodoList from "../containers/VisibleTodoList";
 
@@ -11,6 +12,8 @@ const App = () => (
     <Footer />
     ---------------------------
     <DataDisplay />
+    ---------------------------
+    <SagaDataDisplay />
   </div>
 );
 

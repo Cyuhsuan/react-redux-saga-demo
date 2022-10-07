@@ -1,13 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import todoApp from "./reducers";
+
 import App from "./components/App";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
-let store = createStore(todoApp);
+import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

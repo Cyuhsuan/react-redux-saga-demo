@@ -7,7 +7,7 @@ const Link = ({ active, children, onClick }) => {
 
   return (
     <a
-      href="#"
+      href="http://127.0.0.1"
       onClick={(e) => {
         e.preventDefault();
         onClick();
