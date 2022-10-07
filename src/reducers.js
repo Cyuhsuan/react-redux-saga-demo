@@ -40,9 +40,25 @@ function todos(state = [], action) {
   }
 }
 
+function data(state = [], action) {
+  switch (action.type) {
+    case "ADD_DATA":
+      return [
+        ...state,
+        {
+          data: action.data,
+        },
+      ];
+    default:
+      return state;
+      break;
+  }
+}
+
 const todoApp = combineReducers({
   visibilityFilter,
   todos,
+  data,
 });
 
 export default todoApp;
